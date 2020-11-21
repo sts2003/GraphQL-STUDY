@@ -1,0 +1,15 @@
+type Query {
+  getAllEmp: [Employee!]!
+}
+
+type Mutation {
+  addEmp(
+    name: String!
+    attitude: String!
+    team: String!
+    birth: String!
+  ): Boolean!
+
+  deleteEmp(id: String!): Boolean!
+  updateEmp(id: String!, attitude: String!): Boolean!
+}
